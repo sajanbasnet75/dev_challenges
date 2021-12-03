@@ -1,0 +1,115 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+
+/* Global */
+body {
+  background-color: #181719;
+  color: #ffffff;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul li{
+  list-style: none;
+}
+
+.container {
+  max-width: 1286px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Menu */
+
+/* Responsive */
+
+/* Web View */
+
+/* Header */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  height: 80px;
+}
+
+nav .menu {
+  display: flex;
+}
+
+/* Hero Section */
+
+h1{
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 737px;
+  height: 555px;
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-img-box{
+  position: absolute;
+  background: #181719;
+  bottom: -78px;
+  right: 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.hero-img-box-text .intro .intro-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* Footer */
+footer {
+  margin-top: 128px;
+  text-align: center;
+  margin-bottom: 24px;
+}
