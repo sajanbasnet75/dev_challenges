@@ -36,7 +36,7 @@ ul li {
 /* Web View */
 
 /* Header */
-header { 
+header {
   margin-bottom: 177px;
 }
 
@@ -46,20 +46,6 @@ nav {
   align-items: center;
   padding: 0px 20px;
   height: 80px;
-}
-
-nav .menu {
-  flex: 2;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu li a {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
 }
 
 .logo {
@@ -78,24 +64,32 @@ nav .menu {
   padding: 8px;
 }
 
+.menu {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 /* Hero Section */
-section { 
+section {
   margin-top: 0;
 }
 
 .hero {
   display: flex;
-  justify-content: center;
-}
-
-.hero .hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .hero-text {
-  padding-right: 139px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-text h1 {
@@ -104,6 +98,7 @@ section {
   font-weight: 500;
   font-size: 48px;
   line-height: 61px;
+  margin: 0px;
   margin-bottom: 40px;
 }
 
@@ -115,9 +110,11 @@ section {
   line-height: 29px;
   margin-top: 0;
   margin-bottom: 48px;
+  width: 70%;
 }
 
 .hero-text a {
+  display: inline-block;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -126,13 +123,17 @@ section {
   margin-top: 0;
 }
 
+.hero-text a span{
+  vertical-align: middle;
+}
+
 .hero-img {
   position: relative;
 }
 
-.hero-img img {
-  /* width: 100%;
-  height: 100%; */
+.hero-img-main {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -141,6 +142,7 @@ section {
   background: #181719;
   bottom: -78px;
   right: 32px;
+  width: 45%;
   padding: 0px 26px 0px 26px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -148,15 +150,17 @@ section {
 .intro {
   display: flex;
   align-items: center;
+  margin-top: 18px;
 }
 
-.hero-card-box-text .intro .intro-image {
+.intro-image > img {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  overflow: hidden;
 }
 
 .intro-desc {
-  margin-left: 19px;
+  margin-left: 15px;
 }
 
 .intro-desc h4 {
@@ -165,7 +169,7 @@ section {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  margin: 23px 0px 8px 0px;
+  margin: 0;
   padding: 0;
 }
 
@@ -176,7 +180,7 @@ section {
   font-size: 12px;
   line-height: 15px;
   color: #828282;
-  margin: 0px 0px 30px 0px;
+  margin: 0;
 }
 
 .hero-card-box-text h2 {
@@ -186,9 +190,106 @@ section {
   font-size: 24px;
   line-height: 31px;
 }
-/* Footer */
+/* Footer section */
 footer {
-  margin-top: 128px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
-  margin-bottom: 24px;
+  color: #a9a9a9;
+  margin-top: 200px;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  body {
+    padding: 10px 12px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Header */
+  header {
+    margin-bottom: 38px;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /* Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    padding-right: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 25px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .hero-text a {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 37px;
+  }
+  .hero-card-box {
+    width: 55%;
+  }
+
+  .intro-image > img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  .intro-desc h4 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .intro-desc p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .hero-card-box-text h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  /* Footer */
+
+  footer {
+    font-size: 12px;
+    margin-top: 200px;
+  }
 }
